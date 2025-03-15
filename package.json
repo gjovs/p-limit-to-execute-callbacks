@@ -1,19 +1,24 @@
 {
 	"name": "p-limit",
-	"version": "6.2.0",
-	"description": "Run multiple promise-returning & async functions with limited concurrency",
+	"version": "7.0.0",
+	"description": "Run multiple promise-returning & async functions with limited concurrency using node-events or EventTarge on browser",
 	"license": "MIT",
 	"repository": "sindresorhus/p-limit",
 	"funding": "https://github.com/sponsors/sindresorhus",
-	"author": {
+	"authors": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "https://sindresorhus.com"
+		"url": "https://sindresorhus.com",
+		"coauthor": {
+			"name": "Guilherme Joviniano de Sousa",
+			"email": "sousajovinianoguilherme@gmail.com",
+			"url": "https?://github.com/gjovs"
+		}
 	},
 	"type": "module",
 	"exports": {
 		"types": "./index.d.ts",
-		"default": "./index.js"
+		"default": "./index.ts"
 	},
 	"sideEffects": false,
 	"engines": {
@@ -23,7 +28,7 @@
 		"test": "xo && ava && tsd"
 	},
 	"files": [
-		"index.js",
+		"index.ts",
 		"index.d.ts"
 	],
 	"keywords": [
@@ -43,9 +48,6 @@
 		"promises",
 		"bluebird"
 	],
-	"dependencies": {
-		"yocto-queue": "^1.1.1"
-	},
 	"devDependencies": {
 		"ava": "^6.1.3",
 		"delay": "^6.0.0",
