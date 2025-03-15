@@ -1,4 +1,4 @@
-# p-limit
+# p-limit-to-execute-callbacks
 
 > Run multiple promise-returning & async functions with limited concurrency
 
